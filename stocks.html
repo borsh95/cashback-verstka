@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="borsh">
+    <title></title>
+    <link href="assets/css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/media.css" rel="stylesheet" type="text/css">
+</head>
+<body class="flex overflow-hidden">
+    <div class="n-header">
+        <div class="b-container">
+           <div class="b-row">
+          		<div class="n-header_hamburger">
+          			<span></span>
+          		</div>
+           		<a href="#" class="logo">
+            		<img src="assets/img/logo.svg"  alt="logo">   
+           		</a>
+           		<div class="menu-wrapp">
+           			<nav class="menu">
+           				<div class="menu-item">
+           					<a href="stocks.html" class="active">Мои акции</a>
+           				</div>
+           				<div class="menu-item">
+           					<a href="transactions.html">Транзакции</a>
+           				</div>
+           				<div class="menu-item">
+           					<a href="statistics.html">Статистика</a>
+           				</div>
+           				<div class="menu-item">
+           					<a href="documents.html">Документы</a>
+           				</div>
+           				<div class="menu-item">
+           					<a href="messages.html">Сообщения</a>
+           					<div class="num">2</div>
+           				</div>
+           			</nav>
+           		</div>
+           		<div class="account flex">
+           			<div class="account_name">
+           				<div>Имя</div>
+           				<div>Фамилия</div>
+           			</div>
+           			<div class="personal-account">
+						<a href="profile.html" class="personal-account_ic">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14 0C6.28037 0 0 6.28037 0 14C0 21.7196 6.28037 28 14 28C21.7196 28 28 21.7196 28 14C28 6.28037 21.7196 0 14 0ZM14 26.3594C7.18501 26.3594 1.64062 20.815 1.64062 14C1.64062 7.18501 7.18501 1.64062 14 1.64062C20.815 1.64062 26.3594 7.18501 26.3594 14C26.3594 20.815 20.815 26.3594 14 26.3594Z" />
+								<path d="M14 14.7656C17.1662 14.7656 19.7422 12.1897 19.7422 9.02344C19.7422 5.8572 17.1662 3.28125 14 3.28125C10.8338 3.28125 8.25781 5.8572 8.25781 9.02344C8.25781 12.1897 10.8338 14.7656 14 14.7656ZM14 4.92188C16.2616 4.92188 18.1016 6.76184 18.1016 9.02344C18.1016 11.285 16.2616 13.125 14 13.125C11.7384 13.125 9.89844 11.285 9.89844 9.02344C9.89844 6.76184 11.7384 4.92188 14 4.92188Z"/>
+								<path d="M23.223 18.3445C22.1329 17.1127 20.5652 16.4062 18.9219 16.4062H9.07813C7.43482 16.4062 5.8671 17.1127 4.77701 18.3445L4.38818 18.784L4.67836 19.2939C6.58241 22.6401 10.1543 24.7188 14 24.7188C17.8457 24.7188 21.4176 22.6401 23.3217 19.2939L23.6119 18.7839L23.223 18.3445ZM14 23.0781C10.9519 23.0781 8.10682 21.5361 6.43218 19.0151C7.16784 18.3943 8.10447 18.0469 9.07813 18.0469H18.9219C19.8955 18.0469 20.8322 18.3943 21.5678 19.0151C19.8932 21.5361 17.0481 23.0781 14 23.0781Z"/>
+							</svg>
+						</a>
+           			</div>
+           		</div>
+           		<div class="log-off">
+           			<a href="#" class="log-off_ic">
+           				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+							<path d="M15.0385 17.4278H16.9125V21.1758C16.9125 22.7258 15.6515 23.9866 14.1015 23.9866H2.81085C1.26105 23.9866 0 22.7258 0 21.1758V2.81085C0 1.26105 1.26105 0 2.81085 0H14.1015C15.6515 0 16.9125 1.26105 16.9125 2.81085V6.55884H15.0385V2.81085C15.0385 2.29431 14.6182 1.8739 14.1015 1.8739H2.81085C2.29431 1.8739 1.8739 2.29431 1.8739 2.81085V21.1758C1.8739 21.6923 2.29431 22.1127 2.81085 22.1127H14.1015C14.6182 22.1127 15.0385 21.6923 15.0385 21.1758V17.4278ZM19.5829 7.57617L18.2578 8.90131L20.4128 11.0565H8.2923V12.9304H20.4128L18.2578 15.0853L19.5829 16.4105L24 11.9934L19.5829 7.57617Z"/>
+							</g>
+							<defs>
+							<clipPath id="clip0">
+							<rect width="24" height="24" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+           			</a>
+           		</div>
+           </div>
+        </div>
+        <div class="n-header_line-bottom"></div>
+    </div>
+    <div class="panel-wrapp stocks-page">
+    	<div class="b-container">
+    		<div class="panel">
+    			<div class="panel_title">Мои акции</div>
+    			<div class="change-message">
+    				Изменения удачно внесены
+    				<div class="change-message_close"></div>
+    			</div>
+    			<div class="nav-slider-wrapp">
+					<div class="nav-slider">
+					</div>
+    			</div>
+    			<div class="swiper-container panel-slider">
+    				<div class="swiper-wrapper">
+    					<div class="swiper-slide" label="Текущая акция">
+    						<div class="stock-current-item panel_slide-item b-rs6">
+    							<div class="stock-current_visible item-visible flex">
+    								<div class="stock-current_info stock_info">
+    									<div class="name-wrapp flex">
+    										<div class="btn-ic active flex">
+    											<img src="assets/img/icons/arrow-down.png">
+    										</div>
+    										<div class="name">№38 - Наименование акции</div>
+    									</div>
+    									<div class="period-wrapp flex">
+    										<div class="period">
+    											c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <sapn class="number">(30 дней)</sapn>
+    										</div>
+    										<div class="extend-wrapp">
+												<div class="btn-extend btn-open-block">
+													<span class="text orange">Продлить акцию</span>
+												</div>
+												<div class="extend-block b-rs4">
+													<form class="extend-form b-checkbox-container flex">
+														<label class="b-checkbox">
+															<input type="checkbox" name="promotion-days" value="15days">
+															<div>Продлить на 15 дней</div>
+														</label>
+														<label class="b-checkbox">
+															<input type="checkbox" name="promotion-days" value="30days">
+															<div>Продлить на 30 дней</div>
+														</label>
+														<div class="btn-ok btn-orange">Ok</div>
+													</form>
+												</div>
+    										</div>
+    									</div>
+    								</div>
+    								<div class="btns">
+    									<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+    								</div>
+    							</div>
+    							<div class="stock-current_dropdown item-dropdown" style="display: block">
+    								<div class="text">
+    									Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+    								</div>
+    								<div class="terms-list">
+    									<div class="terms-item">
+    										Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+    									</div>
+    									<div class="terms-item">
+    										Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+    									</div>
+    									<div class="terms-item">
+    										Те же условия для повторных покупок
+    									</div>
+    								</div>
+    								<div class="important-list">
+    									<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+    									<div class="important-item">- услуги клиентам; </div>
+    									<div class="important-item">- установку техники; </div>
+    									<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+    									<div class="important-item">- подарочные сертификаты;</div>
+    									<div class="important-item">- покупки в кредит;</div>
+    									<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+    									<div class="important-item">- оптовые заказы и заказы посредников;</div>
+    									<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+    									<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+    								</div>
+    								<div class="btn-ok btn-orange">Копировать</div>
+    							</div>
+    						</div>
+    						<div class="stock-current-item panel_slide-item b-rs6">
+    							<div class="stock-current_visible item-visible flex">
+    								<div class="stock-current_info stock_info">
+    									<div class="name-wrapp flex">
+    										<div class="btn-ic flex">
+    											<img src="assets/img/icons/arrow-down.png">
+    										</div>
+    										<div class="name">№38 - Наименование акции</div>
+    									</div>
+    									<div class="period-wrapp flex">
+    										<div class="period">
+    											c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <sapn class="number">(30 дней)</sapn>
+    										</div>
+    										<div class="extend-wrapp">
+												<div class="btn-extend btn-open-block">
+													<span class="text orange">Продлить акцию</span>
+												</div>
+												<div class="extend-block b-rs4">
+													<form class="extend-form b-checkbox-container flex">
+														<label class="b-checkbox">
+															<input type="checkbox" name="promotion-days" value="15days">
+															<div>Продлить на 15 дней</div>
+														</label>
+														<label class="b-checkbox">
+															<input type="checkbox" name="promotion-days" value="30days">
+															<div>Продлить на 30 дней</div>
+														</label>
+														<div class="btn-ok btn-orange">Ok</div>
+													</form>
+												</div>
+    										</div>
+    									</div>
+    								</div>
+    								<div class="btns">
+    									<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+    								</div>
+    							</div>
+    							<div class="stock-current_dropdown item-dropdown">
+    								<div class="text">
+    									Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+    								</div>
+    								<div class="terms-list">
+    									<div class="terms-item">
+    										Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+    									</div>
+    									<div class="terms-item">
+    										Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+    									</div>
+    									<div class="terms-item">
+    										Те же условия для повторных покупок
+    									</div>
+    								</div>
+    								<div class="important-list">
+    									<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+    									<div class="important-item">- услуги клиентам; </div>
+    									<div class="important-item">- установку техники; </div>
+    									<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+    									<div class="important-item">- подарочные сертификаты;</div>
+    									<div class="important-item">- покупки в кредит;</div>
+    									<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+    									<div class="important-item">- оптовые заказы и заказы посредников;</div>
+    									<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+    									<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+    								</div>
+    								<div class="btn-ok btn-orange">Копировать</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="swiper-slide" label="+ Новая акция">
+    						<div class="stock-new-item panel-section b-rs6">
+    							<div class="heading">Период и описание</div>
+    							<div class="title">Период акции</div>
+    							<div class="set-period-wrapp flex">
+    								<div class="flex">
+										<span>c</span>
+										<label>
+											<input type="text" name="form-data" id="from" placeholder="чч.мм.гггг">
+											<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.25 6.75H3.75V8.25H5.25V6.75Z"/>
+												<path d="M8.25 6.75H6.75V8.25H8.25V6.75Z"/>
+												<path d="M11.25 6.75H9.75V8.25H11.25V6.75Z"/>
+												<path d="M5.25 9.75H3.75V11.25H5.25V9.75Z"/>
+												<path d="M8.25 9.75H6.75V11.25H8.25V9.75Z"/>
+												<path d="M11.25 9.75H9.75V11.25H11.25V9.75Z"/>
+												<path d="M14.25 1.5H12.75V0.75C12.75 0.3 12.45 0 12 0C11.55 0 11.25 0.3 11.25 0.75V1.5H3.75V0.75C3.75 0.3 3.45 0 3 0C2.55 0 2.25 0.3 2.25 0.75V1.5H0.75C0.3 1.5 0 1.8 0 2.25V14.25C0 14.7 0.3 15 0.75 15H14.25C14.625 15 15 14.7 15 14.25V2.25C15 1.8 14.625 1.5 14.25 1.5ZM13.5 13.5H1.5V4.5H13.5V13.5Z"/>
+											</svg>
+										</label>
+										<span>по</span>
+										<label>
+											<input type="text" name="to-data" id="to" placeholder="чч.мм.гггг">
+											<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.25 6.75H3.75V8.25H5.25V6.75Z"/>
+												<path d="M8.25 6.75H6.75V8.25H8.25V6.75Z"/>
+												<path d="M11.25 6.75H9.75V8.25H11.25V6.75Z"/>
+												<path d="M5.25 9.75H3.75V11.25H5.25V9.75Z"/>
+												<path d="M8.25 9.75H6.75V11.25H8.25V9.75Z"/>
+												<path d="M11.25 9.75H9.75V11.25H11.25V9.75Z"/>
+												<path d="M14.25 1.5H12.75V0.75C12.75 0.3 12.45 0 12 0C11.55 0 11.25 0.3 11.25 0.75V1.5H3.75V0.75C3.75 0.3 3.45 0 3 0C2.55 0 2.25 0.3 2.25 0.75V1.5H0.75C0.3 1.5 0 1.8 0 2.25V14.25C0 14.7 0.3 15 0.75 15H14.25C14.625 15 15 14.7 15 14.25V2.25C15 1.8 14.625 1.5 14.25 1.5ZM13.5 13.5H1.5V4.5H13.5V13.5Z"/>
+											</svg>
+										</label>
+    								</div>
+    								<div class="number-received-wrapp orange">
+    									<span id="number-received"></span>
+    									<span></span>
+    								</div>
+    								<div class="description">
+    									Минимальный срок акции - 30 дней<br>
+										Рекомендуемый период 2 месяца
+    								</div>
+    							</div>
+    							<div class="n-input">
+    								<div class="title">Наименование акции</div>
+    								<div class="input">
+    									<input type="text" placeholder="Введите текст">
+    								</div>
+    							</div>
+    							<div class="n-input">
+    								<div class="title">Описание акции</div>
+    								<div class="textarea">
+    									<textarea name="descriotion-stock" placeholder="Введите текст"></textarea>
+    								</div>
+    							</div>
+    							<div class="n-input slider-ui-wrapp" id="number-uses-wrapp">
+    								<div class="title">Приложением можно воспользоваться, раз</div>
+    								<div class="input">
+    									<input type="number" step="1" id="number-uses" min="0" max="10">
+    									<div id="number-uses_slider" class="slider-ui"></div>
+    								</div>
+									<label class="b-checkbox">
+										<input type="checkbox" name="number-uses">
+										<div>Без ограничения кол-ва покупок</div>
+									</label>
+    							</div>
+    							<div class="heading">Условие кэшбэк</div>
+    							<div class="subheading">В процентах от покупки</div>
+    							<div class="terms-sliders-wrapp">
+									<div class="row flex">
+										<div class="n-input slider-ui-wrapp read-purchase">
+											<div class="title">
+												Учитывать покупки, руб.
+												<span class="ic-question">
+													<span class="text">
+														500 руб. минимальная сумма покупки при на начислении кэшбэка
+													</span>
+													<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.37207 7.94434C2.37207 7.30632 2.44954 6.79818 2.60449 6.41992C2.75944 6.04167 3.04199 5.67025 3.45215 5.30566C3.86686 4.93652 4.14258 4.63802 4.2793 4.41016C4.41602 4.17773 4.48438 3.93392 4.48438 3.67871C4.48438 2.90853 4.12891 2.52344 3.41797 2.52344C3.08073 2.52344 2.80957 2.62826 2.60449 2.83789C2.40397 3.04297 2.29915 3.3278 2.29004 3.69238H0.307617C0.316732 2.82194 0.597005 2.14062 1.14844 1.64844C1.70443 1.15625 2.46094 0.910156 3.41797 0.910156C4.38411 0.910156 5.13379 1.14486 5.66699 1.61426C6.2002 2.0791 6.4668 2.73763 6.4668 3.58984C6.4668 3.97721 6.38021 4.34408 6.20703 4.69043C6.03385 5.03223 5.73079 5.41276 5.29785 5.83203L4.74414 6.3584C4.39779 6.69108 4.19954 7.08073 4.14941 7.52734L4.12207 7.94434H2.37207ZM2.17383 10.043C2.17383 9.73763 2.27637 9.48698 2.48145 9.29102C2.69108 9.09049 2.95768 8.99023 3.28125 8.99023C3.60482 8.99023 3.86914 9.09049 4.07422 9.29102C4.28385 9.48698 4.38867 9.73763 4.38867 10.043C4.38867 10.3438 4.28613 10.5921 4.08105 10.7881C3.88053 10.984 3.61393 11.082 3.28125 11.082C2.94857 11.082 2.67969 10.984 2.47461 10.7881C2.27409 10.5921 2.17383 10.3438 2.17383 10.043Z"/>
+													</svg>
+												</span>
+											</div>
+											<div class="input">
+												<input type="text" readonly min="0">
+												<div class="slider-ui range"></div>
+											</div>
+											<label class="b-checkbox">
+												<input type="checkbox" name="number-uses">
+												<div>Без ограничения кол-ва покупок</div>
+											</label>
+										</div>
+										<div class="n-input slider-ui-wrapp cashback-new">
+											<div class="title">Кэшбек для новых клиентов, %</div>
+											<div class="input">
+												<input type="number" min="5" max="25">
+												<div class="slider-ui no-range">
+													<div class="gradation flex">
+														<div><span>5</span></div>
+														<div><span>10</span></div>
+														<div><span>15</span></div>
+														<div><span>20</span><span class="extreme">25</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="n-input slider-ui-wrapp cashback-repeated">
+											<div class="title">Кэшбек для повторных клиентов, %</div>
+											<div class="input">
+												<input type="number" min="5" max="25">
+												<div class="slider-ui no-range">
+													<div class="gradation flex">
+														<div><span>5</span></div>
+														<div><span>10</span></div>
+														<div><span>15</span></div>
+														<div><span>20</span><span class="extreme">25</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btn btn-add btn-white">+ Добавить условия</div>
+									</div>
+									
+    							</div>
+    							<div class="n-input limitation">
+									<div class="title">Ограничение</div>
+									<div class="textarea">
+											<textarea placeholder="Введите текст"></textarea>
+									</div>
+								</div>
+   								<div class="btn-create btn-orange">Создать</div>
+   								<div class="btn-transparent">Редактировать</div>
+   								<div class="text">Предложение будет отправлено на модерацию. Срок обработки займёт не более двух дней.</div>
+    						</div>
+    					</div>
+    							<!--АРХИВ АКЦИЙ-->
+    					<div class="swiper-slide" label="Архив акций">
+							<div class="stock-archive panel_slide-item b-rs6">
+								<div class="stock-archive_visible item-visible flex">
+									<div class="stock_info">
+										<div class="name-wrapp flex">
+											<div class="btn-ic active flex">
+												<img src="assets/img/icons/arrow-down.png">
+											</div>
+											<div class="name">№36 - Летняя акция от Мвидео, 5% Кешбека на все товары для клиентов</div>
+										</div>
+										<div class="period-wrapp flex">
+											<div class="period">
+												c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <span class="number">(30 дней)</span>
+											</div>
+										</div>
+									</div>
+									<div class="btns">
+										<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+									</div>
+									<div class="stock-results flex">
+										<div class="stock-result_title">
+											Результат акции:
+										</div>
+										<div class="stock-results_ammout">
+											Сумма продаж - <span class="orange">3 293 503.21 руб</span>
+										</div>
+										<div class="stock-result_quantity">
+											Кол-во покупок: <span class="orange">1293</span>
+										</div>
+										<div class="stock-result_check">
+											Средний чек: <span class="orange">2 152.04 руб</span>
+										</div>
+									</div>
+								</div>
+								<div class="stock-archive_dropdown item-dropdown" style="display: block">
+									<div class="text">
+										Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+									</div>
+									<div class="terms-list">
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+										</div>
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+										</div>
+										<div class="terms-item">
+											Те же условия для повторных покупок
+										</div>
+									</div>
+									<div class="important-list">
+										<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+										<div class="important-item">- услуги клиентам; </div>
+										<div class="important-item">- установку техники; </div>
+										<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+										<div class="important-item">- подарочные сертификаты;</div>
+										<div class="important-item">- покупки в кредит;</div>
+										<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+										<div class="important-item">- оптовые заказы и заказы посредников;</div>
+										<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+										<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+									</div>
+									<div class="btn-ok btn-orange">Копировать</div>
+								</div>
+							</div>
+							<div class="stock-archive panel_slide-item b-rs6">
+								<div class="stock-archive_visible item-visible flex">
+									<div class="stock_info">
+										<div class="name-wrapp flex">
+											<div class="btn-ic flex">
+												<img src="assets/img/icons/arrow-down.png">
+											</div>
+											<div class="name">№36 - Летняя акция от Мвидео, 5% Кешбека на все товары для клиентов</div>
+										</div>
+										<div class="period-wrapp flex">
+											<div class="period">
+												c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <sapn class="number">(30 дней)</sapn>
+											</div>
+										</div>
+									</div>
+									<div class="btns">
+										<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+									</div>
+									<div class="stock-results flex">
+										<div class="stock-result_title">
+											Результат акции:
+										</div>
+										<div class="stock-results_ammout">
+											Сумма продаж - <span class="orange">3 293 503.21 руб</span>
+										</div>
+										<div class="stock-result_quantity">
+											Кол-во покупок: <span class="orange">1293</span>
+										</div>
+										<div class="stock-result_check">
+											Средний чек: <span class="orange">2 152.04 руб</span>
+										</div>
+									</div>
+								</div>
+								<div class="stock-archive_dropdown item-dropdown">
+									<div class="text">
+										Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+									</div>
+									<div class="terms-list">
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+										</div>
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+										</div>
+										<div class="terms-item">
+											Те же условия для повторных покупок
+										</div>
+									</div>
+									<div class="important-list">
+										<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+										<div class="important-item">- услуги клиентам; </div>
+										<div class="important-item">- установку техники; </div>
+										<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+										<div class="important-item">- подарочные сертификаты;</div>
+										<div class="important-item">- покупки в кредит;</div>
+										<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+										<div class="important-item">- оптовые заказы и заказы посредников;</div>
+										<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+										<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+									</div>
+									<div class="btn-ok btn-orange">Копировать</div>
+								</div>
+							</div>
+							<div class="stock-archive panel_slide-item b-rs6">
+								<div class="stock-archive_visible item-visible flex">
+									<div class="stock_info">
+										<div class="name-wrapp flex">
+											<div class="btn-ic flex">
+												<img src="assets/img/icons/arrow-down.png">
+											</div>
+											<div class="name">№36 - Летняя акция от Мвидео, 5% Кешбека на все товары для клиентов</div>
+										</div>
+										<div class="period-wrapp flex">
+											<div class="period">
+												c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <sapn class="number">(30 дней)</sapn>
+											</div>
+										</div>
+									</div>
+									<div class="btns">
+										<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+									</div>
+									<div class="stock-results flex">
+										<div class="stock-result_title">
+											Результат акции:
+										</div>
+										<div class="stock-results_ammout">
+											Сумма продаж - <span class="orange">3 293 503.21 руб</span>
+										</div>
+										<div class="stock-result_quantity">
+											Кол-во покупок: <span class="orange">1293</span>
+										</div>
+										<div class="stock-result_check">
+											Средний чек: <span class="orange">2 152.04 руб</span>
+										</div>
+									</div>
+								</div>
+								<div class="stock-archive_dropdown item-dropdown">
+									<div class="text">
+										Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+									</div>
+									<div class="terms-list">
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+										</div>
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+										</div>
+										<div class="terms-item">
+											Те же условия для повторных покупок
+										</div>
+									</div>
+									<div class="important-list">
+										<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+										<div class="important-item">- услуги клиентам; </div>
+										<div class="important-item">- установку техники; </div>
+										<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+										<div class="important-item">- подарочные сертификаты;</div>
+										<div class="important-item">- покупки в кредит;</div>
+										<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+										<div class="important-item">- оптовые заказы и заказы посредников;</div>
+										<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+										<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+									</div>
+									<div class="btn-ok btn-orange">Копировать</div>
+								</div>
+							</div>
+							<div class="stock-archive panel_slide-item b-rs6">
+								<div class="stock-archive_visible item-visible flex">
+									<div class="stock_info">
+										<div class="name-wrapp flex">
+											<div class="btn-ic flex">
+												<img src="assets/img/icons/arrow-down.png">
+											</div>
+											<div class="name">№36 - Летняя акция от Мвидео, 5% Кешбека на все товары для клиентов</div>
+										</div>
+										<div class="period-wrapp flex">
+											<div class="period">
+												c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <sapn class="number">(30 дней)</sapn>
+											</div>
+										</div>
+									</div>
+									<div class="btns">
+										<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+									</div>
+									<div class="stock-results flex">
+										<div class="stock-result_title">
+											Результат акции:
+										</div>
+										<div class="stock-results_ammout">
+											Сумма продаж - <span class="orange">3 293 503.21 руб</span>
+										</div>
+										<div class="stock-result_quantity">
+											Кол-во покупок: <span class="orange">1293</span>
+										</div>
+										<div class="stock-result_check">
+											Средний чек: <span class="orange">2 152.04 руб</span>
+										</div>
+									</div>
+								</div>
+								<div class="stock-archive_dropdown item-dropdown">
+									<div class="text">
+										Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+									</div>
+									<div class="terms-list">
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+										</div>
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+										</div>
+										<div class="terms-item">
+											Те же условия для повторных покупок
+										</div>
+									</div>
+									<div class="important-list">
+										<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+										<div class="important-item">- услуги клиентам; </div>
+										<div class="important-item">- установку техники; </div>
+										<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+										<div class="important-item">- подарочные сертификаты;</div>
+										<div class="important-item">- покупки в кредит;</div>
+										<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+										<div class="important-item">- оптовые заказы и заказы посредников;</div>
+										<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+										<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+									</div>
+									<div class="btn-ok btn-orange">Копировать</div>
+								</div>
+							</div>
+							<div class="stock-archive panel_slide-item b-rs6">
+								<div class="stock-archive_visible item-visible flex">
+									<div class="stock_info">
+										<div class="name-wrapp flex">
+											<div class="btn-ic flex">
+												<img src="assets/img/icons/arrow-down.png">
+											</div>
+											<div class="name">№36 - Летняя акция от Мвидео, 5% Кешбека на все товары для клиентов</div>
+										</div>
+										<div class="period-wrapp flex">
+											<div class="period">
+												c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <sapn class="number">(30 дней)</sapn>
+											</div>
+										</div>
+									</div>
+									<div class="btns">
+										<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+									</div>
+									<div class="stock-results flex">
+										<div class="stock-result_title">
+											Результат акции:
+										</div>
+										<div class="stock-results_ammout">
+											Сумма продаж - <span class="orange">3 293 503.21 руб</span>
+										</div>
+										<div class="stock-result_quantity">
+											Кол-во покупок: <span class="orange">1293</span>
+										</div>
+										<div class="stock-result_check">
+											Средний чек: <span class="orange">2 152.04 руб</span>
+										</div>
+									</div>
+								</div>
+								<div class="stock-archive_dropdown item-dropdown">
+									<div class="text">
+										Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+									</div>
+									<div class="terms-list">
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+										</div>
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+										</div>
+										<div class="terms-item">
+											Те же условия для повторных покупок
+										</div>
+									</div>
+									<div class="important-list">
+										<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+										<div class="important-item">- услуги клиентам; </div>
+										<div class="important-item">- установку техники; </div>
+										<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+										<div class="important-item">- подарочные сертификаты;</div>
+										<div class="important-item">- покупки в кредит;</div>
+										<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+										<div class="important-item">- оптовые заказы и заказы посредников;</div>
+										<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+										<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+									</div>
+									<div class="btn-ok btn-orange">Копировать</div>
+								</div>
+							</div>
+							<div class="stock-archive panel_slide-item b-rs6">
+								<div class="stock-archive_visible item-visible flex">
+									<div class="stock_info">
+										<div class="name-wrapp flex">
+											<div class="btn-ic flex">
+												<img src="assets/img/icons/arrow-down.png">
+											</div>
+											<div class="name">№36 - Летняя акция от Мвидео, 5% Кешбека на все товары для клиентов</div>
+										</div>
+										<div class="period-wrapp flex">
+											<div class="period">
+												c <span class="period_from">02.05.2010</span> по <span class="period_to">02.06.2010</span> <sapn class="number">(30 дней)</sapn>
+											</div>
+										</div>
+									</div>
+									<div class="btns">
+										<a href="transactions.html" class="btn btn-white">Транзакция</a><a href="statistics.html" class="btn btn-white">Статистика</a>
+									</div>
+									<div class="stock-results flex">
+										<div class="stock-result_title">
+											Результат акции:
+										</div>
+										<div class="stock-results_ammout">
+											Сумма продаж - <span class="orange">3 293 503.21 руб</span>
+										</div>
+										<div class="stock-result_quantity">
+											Кол-во покупок: <span class="orange">1293</span>
+										</div>
+										<div class="stock-result_check">
+											Средний чек: <span class="orange">2 152.04 руб</span>
+										</div>
+									</div>
+								</div>
+								<div class="stock-archive_dropdown item-dropdown">
+									<div class="text">
+										Что больше всего привлекает покупателей? Качество предлагаемого товара, демократичные цены и разнообразие акций и скидок. Сегодня этот перечень можно дополнить и кэшбэком – это когда часть стоимости приобретенного товара (в процентах или фиксированная) возвращается клиенту в виде реальных денег. Можно сказать, что покупатель может физически ощутить бонус, полученный от магазина.
+									</div>
+									<div class="terms-list">
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">500руб до 5000руб - 5%</span>
+										</div>
+										<div class="terms-item">
+											Начисление кешбека при покупки от <span class="orange">5000руб - 7%</span>
+										</div>
+										<div class="terms-item">
+											Те же условия для повторных покупок
+										</div>
+									</div>
+									<div class="important-list">
+										<span class="red-text">Важно!</span> Кэшбэк не начисляется за:
+										<div class="important-item">- услуги клиентам; </div>
+										<div class="important-item">- установку техники; </div>
+										<div class="important-item">- программы дополнительного сервиса (включая покупку карт пополнения PlayStation и пополнение PS. PlayStation Store);</div>
+										<div class="important-item">- подарочные сертификаты;</div>
+										<div class="important-item">- покупки в кредит;</div>
+										<div class="important-item">- заказы, сделанные в мобильном приложении М.Видео;</div>
+										<div class="important-item">- оптовые заказы и заказы посредников;</div>
+										<div class="important-item">- заказы, которые были возвращены или не были выкуплены;</div>
+										<div class="important-item">- заказы, в которых были изменены: состав товаров, адрес доставки, данные пользователя (при необходимости изменить заказ, его следует отменить и оформить заново).</div>
+									</div>
+									<div class="btn-ok btn-orange">Копировать</div>
+								</div>
+							</div>
+						</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="n-footer">
+        <div class="b-container">
+            <div class="n-footer_copyright">
+                <div><a href="#">Публичная оферта</a> <a href="#">Политика конфиденциальности</a></div>
+                <div>© 2020 платформа разработана компаней <span class="orange">vpodarok.ru</span></div>
+            </div>
+            <div class="n-footer_info">
+                <div class="item">
+                    <div class="title">Поддержка</div>
+                    <a href="tel:88005007612" class="tel orange">8 (800) 500-76-12</a>
+                </div>
+                <div class="item">
+                    <div class="title">Email:</div>
+                    <a href="mailto:hello@vpodarok.ru" class="mail">hello@vpodarok.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery -->
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- jquery ui -->
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <!-- swiper -->
+    <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <!-- B-script -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
